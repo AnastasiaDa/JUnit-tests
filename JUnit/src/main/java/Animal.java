@@ -4,12 +4,13 @@ public class Animal {
 
     private String type;
     private String name;
-    private int age;
+    private double age;
     private String nameOfOwner;
 
-    public Animal() {}
+    public Animal() {
+    }
 
-    public Animal(String type, String name, int age, String nameOfOwner) {
+    public Animal(String type, String name, double age, String nameOfOwner) {
         this.type = type;
         this.name = name;
         this.age = age;
@@ -24,7 +25,7 @@ public class Animal {
         return name;
     }
 
-    public int getAge() {
+    public double getAge() {
         return age;
     }
 
@@ -34,11 +35,10 @@ public class Animal {
 
     @Override
     public String toString() {
-        return "Animal{" +
-                "type='" + type + '\'' +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                ", nameOfOwner='" + nameOfOwner + '\'' +
-                '}';
+        return "\n Animal{" + "\n" +
+                "  type= " + type + "\n" +
+                "  name= " + name + "\n" +
+                "  age= " + age + "\n" +
+                "  nameOfOwner= " + nameOfOwner;
     }
 }
